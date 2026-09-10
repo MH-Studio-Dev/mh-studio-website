@@ -30,10 +30,9 @@ button[aria-pressed="true"] { color: white; background: var(--accent); }
 .showcase p:not(.eyebrow), .contact p:not(.eyebrow) { color: var(--muted); font-size: 18px; }
 .showcase a { font-weight: 800; }
 .store-links { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 28px 0 22px; }
-.store-links button { padding: 0; border-radius: 7px; }
+.store-links button { padding: 0; background: none; border-radius: 0; line-height: 0; appearance: none; }
 .store-links button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
 .store-links img { display: block; height: 40px; }
-.store-links .google-play-badge { height: 60px; margin: -10px; }
 .contact { padding: 90px 24px; background: var(--cream); text-align: center; }
 .contact > div { max-width: 680px; margin: auto; }
 .contact-mail { display: inline-block; margin-top: 16px; font-size: clamp(18px, 3vw, 28px); font-weight: 800; }
