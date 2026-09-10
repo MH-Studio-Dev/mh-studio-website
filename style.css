@@ -29,6 +29,9 @@ button[aria-pressed="true"] { color: white; background: var(--accent); }
 .showcase h2, .contact h2 { margin: 8px 0 20px; font-size: clamp(34px, 5vw, 54px); }
 .showcase p:not(.eyebrow), .contact p:not(.eyebrow) { color: var(--muted); font-size: 18px; }
 .showcase a { font-weight: 800; }
+.store-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 28px 0 22px; }
+.store-links button { padding: 11px 16px; color: white; background: #17151a; border-radius: 10px; font-size: 14px; }
+.store-links button:hover { background: var(--accent); }
 .contact { padding: 90px 24px; background: var(--cream); text-align: center; }
 .contact > div { max-width: 680px; margin: auto; }
 .contact-mail { display: inline-block; margin-top: 16px; font-size: clamp(18px, 3vw, 28px); font-weight: 800; }
