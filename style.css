@@ -24,8 +24,11 @@ button[aria-pressed="true"] { color: white; background: var(--accent); }
 .home-hero { min-height: 72vh; display: grid; align-items: center; padding: 100px max(24px, calc((100% - 1120px) / 2)); background: radial-gradient(circle at 82% 18%, #f4d3d6 0, transparent 30%), radial-gradient(circle at 70% 80%, #ddd5f3 0, transparent 34%), var(--paper); }
 .home-hero > div { max-width: 850px; }
 .home-hero p:not(.eyebrow) { max-width: 610px; color: var(--muted); font-size: 19px; }
+.games-area { background: var(--cream); }
 .showcase { display: grid; grid-template-columns: minmax(240px, 420px) minmax(0, 520px); align-items: center; gap: clamp(48px, 8vw, 100px); max-width: 1120px; margin: 0 auto; padding: 110px 24px; }
-.showcase > img { width: 100%; border-radius: 28%; box-shadow: 0 24px 70px rgb(64 53 79 / 18%); }
+#games { row-gap: 28px; }
+.games-heading { grid-column: 1 / -1; margin: 0; }
+.showcase > img { width: 100%; height: auto; border-radius: 28%; box-shadow: 0 24px 70px rgb(64 53 79 / 18%); }
 .showcase h2, .contact h2 { margin: 8px 0 20px; font-size: clamp(34px, 5vw, 54px); }
 .showcase p:not(.eyebrow), .contact p:not(.eyebrow) { color: var(--muted); font-size: 18px; }
 .showcase a { font-weight: 800; }
@@ -37,7 +40,22 @@ button[aria-pressed="true"] { color: white; background: var(--accent); }
 .store-button span, .store-button strong, .store-button small { display: block; }
 .store-button small { font-size: 10px; font-weight: 700; line-height: 1; letter-spacing: .06em; }
 .store-button strong { margin-top: 4px; font-size: 17px; line-height: 1; letter-spacing: -.02em; }
-.contact { padding: 90px 24px; background: var(--cream); text-align: center; }
+.game-divider { max-width: 1072px; width: calc(100% - 48px); margin: 0 auto 72px; border: 0; border-top: 1px solid var(--line); }
+.upcoming-game { padding-top: 0; }
+.release-status { display: inline-block; margin-top: 10px; padding: 6px 14px; color: var(--accent); background: var(--cream); border: 1px solid var(--line); border-radius: 999px; font-size: 14px; font-weight: 700; }
+.apps { padding: 72px 24px 48px; background: #f1f5f9; }
+.apps > div { max-width: 1072px; margin: 0 auto; }
+.apps h2 { margin: 0 0 12px; font-size: 12px; line-height: 1.75; }
+.app-list { list-style: none; margin: 0; padding: 0; }
+.app-row { display: flex; align-items: center; gap: 18px; padding: 22px 0; border-bottom: 1px solid var(--line); }
+.app-row + .app-row { margin-top: 0; }
+.app-row:last-child { padding-bottom: 0; border-bottom: 0; }
+.app-row > img { flex: none; border-radius: 15px; }
+.app-info { flex: 1; min-width: 0; }
+.app-info h3 { margin: 0 0 4px; font-size: 17px; line-height: 1.5; overflow-wrap: anywhere; }
+.app-info p { margin: 0; color: var(--muted); font-size: 14px; }
+.app-status { flex: none; color: var(--muted); font-size: 13px; }
+.contact { padding: 90px 24px; background: var(--paper); text-align: center; }
 .contact > div { max-width: 680px; margin: auto; }
 .contact-mail { display: inline-block; margin-top: 16px; font-size: clamp(18px, 3vw, 28px); font-weight: 800; }
 h1 { max-width: 760px; margin: 8px 0; font-size: clamp(40px, 7vw, 72px); line-height: 1.06; letter-spacing: -.055em; }
@@ -73,7 +91,13 @@ footer small { display: block; margin-top: 6px; }
   .hero { padding: 52px 20px 42px; }
   .home-hero { min-height: 68vh; padding: 72px 20px; }
   .showcase { grid-template-columns: 1fr; padding: 72px 20px; }
+  .game-divider { width: calc(100% - 40px); margin-bottom: 48px; }
+  .upcoming-game { padding-top: 0; }
   .showcase > img { width: min(72vw, 300px); margin: auto; }
+  .apps { padding: 52px 20px 32px; }
+  .app-row { flex-wrap: wrap; gap: 12px 14px; }
+  .app-info { flex-basis: calc(100% - 78px); }
+  .app-status { margin-left: 78px; }
   .layout { display: block; padding: 32px 20px 72px; }
   aside { position: static; margin-bottom: 44px; }
   aside > div { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 8px; }
