@@ -30,7 +30,7 @@ button[aria-pressed="true"] { color: white; background: var(--accent); }
 .showcase p:not(.eyebrow), .contact p:not(.eyebrow) { color: var(--muted); font-size: 18px; }
 .showcase a { font-weight: 800; }
 .store-links { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 28px 0 22px; }
-.store-button { display: inline-flex; align-items: center; gap: 12px; min-width: 174px; height: 56px; padding: 8px 16px; color: white; background: var(--ink); border: 1px solid var(--ink); border-radius: 14px; text-align: left; }
+.store-button { display: inline-flex; align-items: center; gap: 12px; min-width: 174px; height: 56px; padding: 8px 16px; color: white; background: var(--ink); border: 1px solid var(--ink); border-radius: 14px; text-align: left; text-decoration: none; }
 .store-button:hover { background: #2f273a; }
 .store-button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
 .store-button img { width: 30px; height: 30px; filter: invert(1); }
